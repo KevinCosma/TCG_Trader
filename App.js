@@ -1,22 +1,24 @@
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
+import React from 'react';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.mainScreen}>
-        <Text>Main Screen</Text>
+        <Text style={styles.headerText}>Main Screen</Text>
         <Text>Register</Text>
         <Text>Login</Text>
       </View>
 
       <View style={styles.loginScreen}>
-        <Text>Login Screen</Text>
+        <Text style={styles.headerText}>Login Screen</Text>
         <TextInput placeholder='Username'/>
         <TextInput placeholder='Password'/>
       </View>
 
       <View style={styles.registerScreen}>
-        <Text>Register Screen</Text>
+        <Text style={styles.headerText}>Register Screen</Text>
         <TextInput placeholder='First Name'/>
         <TextInput placeholder='Last Name'/>
         <TextInput placeholder='Email'/>
@@ -26,14 +28,14 @@ export default function App() {
       </View>
 
       <View style={styles.userMainScreen}>
-        <Text>UserMainScreen</Text>
+        <Text style={styles.headerText}>UserMainScreen</Text>
         <Button title='Search for a card'/>
         <Button title='Add a card'/>
         <Text>List Of Your Cards</Text>
       </View>
 
       <View style={styles.addCardScreen}>
-        <Text>Add Card Screen</Text>
+        <Text style={styles.headerText}>Add Card Screen</Text>
         <Text>Choose Card Game</Text>
         <TextInput placeholder='Card Name'/>
         <Text>Choose Damage Level</Text>
@@ -42,14 +44,14 @@ export default function App() {
       </View>
 
       <View style={styles.searchScreen}>
-        <Text>Search Screen</Text>
+        <Text style={styles.headerText}>Search Screen</Text>
         <Text>Filter TCG Dropdown</Text>
         <Text>(Add filters that depend on which TCG you picked???)</Text>
         <TextInput placeholder='Search'/>
       </View>
 
       <View style={styles.discussion}>
-        <Text>Message function?</Text>
+        <Text style={styles.headerText}>Message function?</Text>
         <Text>Anything else that I haven't thought of???</Text>
       </View>
     </View>
@@ -66,41 +68,54 @@ const styles = StyleSheet.create({
 
   mainScreen: {
     padding: 20,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
 
   loginScreen: {
-    padding: 20
+    padding: 20,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 
   registerScreen: {
     padding: 20,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
 
   userMainScreen: {
     padding: 20,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
 
   addCardScreen: {
     padding: 20,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
 
   searchScreen: {
     padding: 20,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
 
   discussion: {
     padding: 20,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+
+  headerText: {
+    fontSize: 24
   }
 });
