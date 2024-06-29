@@ -5,7 +5,7 @@ import React from 'react';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView nestedScrollEnabled={true}>
         <View style={styles.mainScreen}>
           <Text style={styles.headerText}>Main Screen</Text>
           <Button title='Login'/>
