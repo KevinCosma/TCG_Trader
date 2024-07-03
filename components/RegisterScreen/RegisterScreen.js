@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
-function registerScreen() {
+function RegisterScreen() {
     const [enteredNewUserInput, setEnteredNewUserInput] = useState('');
 
     function textInputHandler(enteredText) {
@@ -32,7 +32,7 @@ function registerScreen() {
     );
 }
 
-export default registerScreen;
+export default RegisterScreen;
 
 const styles = StyleSheet.create({
     registerScreen: {

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
-function addCardScreen() {
+function AddCardScreen() {
     const [enteredCardName, setEnteredCardName] = useState('');
 
     function cardNameInputHandler(enteredText) {
@@ -29,7 +29,7 @@ function addCardScreen() {
     );
 }
 
-export default addCardScreen;
+export default AddCardScreen;
 
 const styles = StyleSheet.create({
     addCardScreen: {

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
-function loginScreen() {
+function LoginScreen() {
     const [enteredCurrentUserInput, setCurrentUserInput] = useState('');
 
     function userInputHandler(enteredText) {
@@ -26,7 +26,7 @@ function loginScreen() {
     );
 }
 
-export default loginScreen;
+export default LoginScreen;
 
 const styles = StyleSheet.create({
     loginScreen: {

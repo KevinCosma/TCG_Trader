@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 import React from 'react';
 
-function userProfileScreen() {
+function UserProfileScreen() {
     return (
         <View style={styles.userProfileScreen}>
             <Text style={styles.headerText}>UserProfileScreen</Text>
@@ -15,7 +15,7 @@ function userProfileScreen() {
     );
 }
 
-export default userProfileScreen;
+export default UserProfileScreen;
 
 const styles = StyleSheet.create({
     userProfileScreen: {

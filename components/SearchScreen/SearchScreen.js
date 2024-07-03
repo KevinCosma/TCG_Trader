@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React, { useState } from 'react';
 
-function searchScreen() {
+function SearchScreen() {
     const [enteredSearchInput, setEnteredSearchInput] = useState('');
 
     function searchInputHandler(enteredText) {
@@ -9,7 +9,7 @@ function searchScreen() {
     }
 
     function searchButtonHandler() {
-        
+
     }
     
     return (
@@ -28,7 +28,7 @@ function searchScreen() {
     
 }
 
-export default searchScreen;
+export default SearchScreen;
 
 const styles = StyleSheet.create({
     searchScreen: {
