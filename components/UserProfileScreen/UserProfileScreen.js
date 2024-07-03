@@ -1,12 +1,27 @@
 import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 import React from 'react';
 
-function UserProfileScreen() {
+function UserProfileScreen({navigation}) {
+    function addCardButtonHandler() {
+        navigation.navigate('Login');
+    }
+
+    function searchButtonHandler() {
+        navigation.navigate('Register');
+    }
+    
+    
     return (
         <View style={styles.userProfileScreen}>
             <Text style={styles.headerText}>UserProfileScreen</Text>
-            <Button title='Search for a card'/>
-            <Button title='Add a card'/>
+            <Button 
+                title='Search for a card'
+                onPress={addCardButtonHandler}
+            />
+            <Button 
+                title='Add a card'
+                onPress={searchButtonHandler}
+            />
             <Text>List Of Your Cards</Text>
             <ScrollView nestedScrollEnabled={true}>
 
