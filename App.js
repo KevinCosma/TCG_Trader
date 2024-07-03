@@ -10,24 +10,24 @@ import UserProfileScreen from './components/UserProfileScreen/UserProfileScreen'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <NavigationContainer>
-        <View style={styles.mainMenuScreen}>
-          <Text style={styles.headerText}>Main Screen</Text>
-          <Button title='Login'/>
-          <Button title='Register'/>
-          <LoginScreen />
-          <RegisterScreen />
-          <UserProfileScreen />
-          <AddCardScreen />
-          <SearchScreen />
-        </View>
-      </NavigationContainer>
-      <View style={styles.discussion}>
-        <Text style={styles.headerText}>Message function?</Text>
-        <Text style={styles.headerText}>Anything else that I haven't thought of???</Text>
+    <NavigationContainer>
+      <View style={styles.container}>
+          <View style={styles.mainMenuScreen}>
+            <Text style={styles.headerText}>Main Screen</Text>
+            <Button title='Login'/>
+            <Button title='Register'/>
+            <LoginScreen />
+            <RegisterScreen />
+            <UserProfileScreen />
+            <AddCardScreen />
+            <SearchScreen />
+          </View>
+          <View style={styles.discussion}>
+            <Text style={styles.headerText}>Message function?</Text>
+            <Text style={styles.headerText}>Anything else that I haven't thought of???</Text>
+          </View>
       </View>
-    </View>
+    </NavigationContainer>
   );
 }
 
