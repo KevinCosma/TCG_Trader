@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
 function registerScreen() {
@@ -11,6 +11,7 @@ function registerScreen() {
             <TextInput placeholder='Username'/>
             <TextInput placeholder='Password'/>
             <TextInput placeholder='Confirm Password'/>
+            <Button title='Register'/>
         </View>
     );
 }

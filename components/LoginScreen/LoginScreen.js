@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
 function loginScreen() {
@@ -7,6 +7,7 @@ function loginScreen() {
             <Text style={styles.headerText}>Login Screen</Text>
             <TextInput placeholder='Username'/>
             <TextInput placeholder='Password'/>
+            <Button title='Login'/>
         </View>
     );
 }

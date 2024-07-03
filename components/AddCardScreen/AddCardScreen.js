@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
 function addCardScreen() {
@@ -10,6 +10,7 @@ function addCardScreen() {
             <Text>Choose Damage Level</Text>
             <TextInput placeholder='Price'/>
             <Text>(Anything else we should add???)</Text>
+            <Button title='Add Card' />
         </View>
     );
 }

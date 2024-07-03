@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import React from 'react';
 
 function searchScreen() {
@@ -8,6 +8,7 @@ function searchScreen() {
             <Text>Filter TCG Dropdown</Text>
             <Text>(Add filters that depend on which TCG you picked???)</Text>
             <TextInput placeholder='Search'/>
+            <Button title='Search'/>
       </View>
     );
     

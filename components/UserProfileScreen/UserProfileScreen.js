@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 import React from 'react';
 
 function userProfileScreen() {
