@@ -18,5 +18,8 @@ export default addCardScreen;
 const styles = StyleSheet.create({
     addCardScreen: {
         padding: 20,
-      },
+    },
+    headerText: {
+        fontSize: 24
+    }
 });

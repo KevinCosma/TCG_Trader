@@ -8,7 +8,7 @@ function userProfileScreen() {
             <Button title='Add a card'/>
             <Text>List Of Your Cards</Text>
             <ScrollView nestedScrollEnabled={true}>
-                
+
             </ScrollView>
         </View>
     );
@@ -20,5 +20,8 @@ const styles = StyleSheet.create({
     userProfileScreen: {
         padding: 20,
         flex: 1,
-      },
+    },
+    headerText: {
+        fontSize: 24
+    }
 });

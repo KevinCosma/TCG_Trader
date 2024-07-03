@@ -19,5 +19,8 @@ export default registerScreen;
 const styles = StyleSheet.create({
     registerScreen: {
         padding: 20,
-      },
+    },
+    headerText: {
+        fontSize: 24
+    }
 });

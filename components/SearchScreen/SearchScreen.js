@@ -17,5 +17,8 @@ export default searchScreen;
 const styles = StyleSheet.create({
     searchScreen: {
         padding: 20,
-      },
+    },
+    headerText: {
+        fontSize: 24
+    }
 });

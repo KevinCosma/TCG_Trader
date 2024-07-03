@@ -15,5 +15,8 @@ export default loginScreen;
 const styles = StyleSheet.create({
     loginScreen: {
         padding: 20,
-      },
+    },
+    headerText: {
+        fontSize: 24
+    }
 });
